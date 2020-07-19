@@ -14,7 +14,7 @@ class Home extends React.Component {
   _onMartianPhotoPress = (martianPhoto) => {
     console.log('martianPhoto: ', martianPhoto.id);
     this.props.setSelectedMartianPhoto(martianPhoto);
-    Actions.push('MartianPhotoDetail', {title: toString(martianPhoto.id)});
+    Actions.push('MartianPhotoDetail');
   };
 
   _onEndReached = ({distanceFromEnd}) => {
